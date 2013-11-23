@@ -115,7 +115,7 @@ h2 {
 
 
 
-button {
+.button {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     background: #87C442;
@@ -125,7 +125,6 @@ button {
     background-image: -o-linear-gradient(#9FD04F,#87C442);
     background-image: -ms-linear-gradient(#9FD04F,#87C442);
     background-image: linear-gradient(#9FD04F,#87C442);
-    color: black;
     -moz-box-shadow: inset 0 1px 0 0 #b7dc63;
     -webkit-box-shadow: inset 0 1px 0 0 #B7DC63;
     -o-box-shadow: inset 0 1px 0 0 #b7dc63;
@@ -147,7 +146,7 @@ button {
     color: #000;
     font-size: 24px;
     line-height: 48px;
-    padding: 0 20px;
+    padding: 8px 20px;
     -moz-transition: "color","0.3s";
     -webkit-transition: "color","0.3s";
     -o-transition: "color","0.3s";
@@ -157,11 +156,11 @@ button {
     opacity: 0.99;
 }
 
-button:hover {
+.button:hover {
     opacity: 0.9;
 }
 
-button.facebook {
+.button.facebook {
     background: #3b5998;
     background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#4b71c1),color-stop(100%,#3b5998));
     background-image: -webkit-linear-gradient(#4b71c1,#3b5998);
@@ -177,7 +176,7 @@ button.facebook {
     text-shadow: #3b5998 0 1px 0;
 }
 
-button.twitter {
+.button.twitter {
     background: #2578b4;
     background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#58a8e2),color-stop(100%,#2578b4));
     background-image: -webkit-linear-gradient(#58a8e2,#2578b4);
