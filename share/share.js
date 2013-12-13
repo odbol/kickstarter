@@ -35,4 +35,12 @@ $(function() {
 
         return false;
     });
+
+    $('.email').on('click', function () {
+        var formattedBody = "Hey,\n\nHave you seen the DrumPants on Kickstarter? You can play sounds on your pants! Thought it was perfect for you:\n\nhttp://www.kickstarter.com/projects/1400947701/drumpants-an-entire-band-in-your-pocket\n\nSee you round,\n\n";
+        
+        window.location.href = "mailto:?subject=Saw these DrumPants and thought of you!&body=" + encodeURIComponent(formattedBody);
+
+        return false;
+    });
 });
