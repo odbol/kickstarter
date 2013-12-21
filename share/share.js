@@ -23,6 +23,12 @@ $(function() {
         $('.number').text(percent + '%');
     });
 
+    $('.link').on('click', function() {
+        window.open(this.href);
+
+        return false;
+    });
+
 
     $('.twitter').on('click', function() {
         openSharePopup("http://twitter.com/share?url=", this.href, this.title); 
@@ -37,9 +43,9 @@ $(function() {
     });
 
     $('.email').on('click', function () {
-        var formattedBody = "Hey,\n\nHave you seen the DrumPants on Kickstarter? You can play sounds on your pants! Thought it was perfect for you:\n\nhttp://www.kickstarter.com/projects/1400947701/drumpants-an-entire-band-in-your-pocket\n\nSee you round,\n\n";
+        var formattedBody = "Hey,\n\nThough you might want to know that DrumPants is giving away a free kit for the holidays.\n\nEnter here: \n\nhttp://on.fb.me/19QY7Z0\n\nSee you round,\n\n";
         
-        window.location.href = "mailto:?subject=Saw these DrumPants and thought of you!&body=" + encodeURIComponent(formattedBody);
+        window.location.href = "mailto:?subject=Free DrumPants Giveaway!&body=" + encodeURIComponent(formattedBody);
 
         return false;
     });
