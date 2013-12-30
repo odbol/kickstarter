@@ -21,6 +21,11 @@ $(function() {
         var percent = Math.min(Math.round(clicks / 3 * 100), 100);
         $('.percent').width(percent + '%');
         $('.number').text(percent + '%');
+
+
+        // track in mixpanel if it's installed
+        mixpanel && mixpanel.track("Button clicked: " + this.href);
+
     });
 
     $('.link').on('click', function() {
