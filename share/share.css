@@ -83,7 +83,8 @@ h2 {
     font-weight: bold;
 }
 
-#actions {
+#actions,
+.actions {
     margin: 0px;
     padding: 0px;
     overflow: hidden;
@@ -92,7 +93,8 @@ h2 {
 
 
 
-#actions li {
+#actions li,
+.actions li {
     float: left;
     width: 33%;
     padding: 10px;
@@ -101,15 +103,18 @@ h2 {
     border-left: 1px solid #fff;
 }
 
-#actions li:nth-child(1) {
+#actions li:nth-child(1),
+.actions li:nth-child(1) {
     border-left: none;
 }
 
-#actions li:nth-child(2) {
+#actions li:nth-child(2),
+.actions li:nth-child(2) {
     width: 34%;
 }
 
-#actions li:nth-child(3) {
+#actions li:nth-child(3),
+.actions li:nth-child(3) {
     border-right: none;
 }
 
@@ -202,4 +207,27 @@ h2 {
     text-align: center;
     width: 100%;
     
+}
+
+
+
+
+/**** FOR REFERRAL PAGE ***/
+
+.entry {
+    display:block;
+    width: 70%;
+    margin: 2em auto;
+}
+
+.error {
+    -moz-box-shadow: 0 0 6px rgba(255, 0, 0, 0.7);
+    -webkit-box-shadow: 0 0 6px rgba(255, 0, 0, 0.7);
+    -o-box-shadow: 0 0 6px rgba(255, 0, 0, 0.7);
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0.7);
+}
+
+#referralCodeForm,
+.step2 {
+    display:none;
 }

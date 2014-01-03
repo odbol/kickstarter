@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DrumPants - Referral Prizes</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="share.css" />
+        <link type="text/css" rel="stylesheet" media="only screen and (max-width: 600px)" href="mobile.css" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    </head>
+    <body>
+        <h1>Win a DrumPants Kit</h1>
+        <div id="container">
+            <p id="welcome">
+               
+                The person with the most referrals wins a DrumPants PRO kit! 
+                <br /><br />
+
+                <iframe width="480" height="360" style="display:block;width:480px; margin:auto"  src="http://www.kickstarter.com/projects/1400947701/drumpants-an-entire-band-in-your-pocket/widget/video.html" frameborder="0" scrolling="no"> </iframe>
+                
+                <br /><br />
+                
+                <b>Can't wait to prank your friends? We'll release the source code next week.</b>
+                <br /><br />
+                Team DrumPants
+            </p>
+            <div id="progress">
+                <div class="percent">
+                    <div class="number">0%</div>
+                </div>
+            </div>
+            <ul id="actions" class='actions'>
+                <li>
+                    <h2>1. Back us on Kickstarter</h2>
+                    <p>Pledge to our campaign to earn a point.</p>
+                    <a class="button link" href="http://kck.st/JqCl7X" title="Lei thought she was just recording a simple @DrumPants demo video, but she was in for a sparkly surprise...">Pledge</a>
+                </li>
+                <li>
+                    <h2>2. Redeem Referral Code</h2>
+                    <p>Send DrumPants a message on Kickstarter with this text: </p>
+
+                    <input type='text' class='entry copyable' id="referred_text" value="referred by [username]" />
+                        
+                    <a class="button link" href="http://www.kickstarter.com/projects/1400947701/drumpants-an-entire-band-in-your-pocket/messages/new?message%5Bto%5D=1400947701" title="Lei thought she was just recording a simple @DrumPants demo video, but she was in for a sparkly surprise...">Redeem</a>
+                </li>
+                <li>
+                    <h2>3. Refer your friends to win!</h2>
+                    <p>Each friend who backs us earns you another point!</p>
+                    <a class="button showReferralForm" href="#">Get Your Code</a>
+                </li>
+            </ul>
+
+            <div id="referralCodeForm">
+                <ul class="actions">
+                    <li>
+                        <h2>1. Enter Username</h2>
+                        <p>Your Kickstarter username will be your referral code.</p>
+
+                        <input type='text' id='username' class='entry' placeholder='Enter Kickstarter Username' />
+
+                        <a class="button getCodeButton" href="#">Get Code</a>
+                    </li>
+                    <li class='step step2'>
+                        <h2>2. Share on Twitter</h2>
+                        <p>Point your followers to this link: </p>
+
+                        <input type='text' class='entry referralLink copyable' value='http://wear.drumpants.com/share/referral' />
+                        
+                        <a class="button twitter referralLinkButton" href="http://wear.drumpants.com/share/referral" title="Get a free pair of DrumPants here!">Tweet</a>
+                    </li>
+                    <li class='step step2'>
+                        <h2>3. Share on Facebook</h2>
+                        <p>Tell your friends to this link: </p>
+
+                        <input type='text' class='entry referralLink copyable' value='http://wear.drumpants.com/share/referral' />
+
+                        <a class="button facebook referralLinkButton" href="http://wear.drumpants.com/share/referral" title="Get a free pair of DrumPants here!">Share</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+        <div id="footer" style='display:none'>&copy; DrumPants 2013</div>
+        <script src="share.js"></script>
+        
+        <script src="referral.js"></script>
+
+        <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
+b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("3d2cd902f6555ce271e0ecc4ec82a2e2");</script><!-- end Mixpanel -->
+    </body>
+</html>
