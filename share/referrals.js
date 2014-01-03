@@ -2,9 +2,10 @@ $(function() {
 
 	var referralCodeMatches = /code=([^&#]+)/i.exec(window.location.href),
 		referralCode = referralCodeMatches ? referralCodeMatches[1] : null,
+		originalReferralUrl = $('.referralLinkButton').attr('href'),
 
 		showActions = function () {
-			var referralMsg = 'referred by ' + referralCode;
+			var referralMsg = 'Referred by ' + referralCode;
 
 			$('#referred_text').val(referralMsg);
 
@@ -20,7 +21,7 @@ $(function() {
 
 		onEnteredName = function () {
 			var username = $('#username').val(),
-				referralUrl = $('.referralLinkButton').attr('href') + "?code=" + encodeURIComponent(username);
+				referralUrl = originalReferralUrl + "?code=" + encodeURIComponent(username);
 
 			if (username) {
 

@@ -165,7 +165,8 @@ h2 {
     opacity: 0.9;
 }
 
-.button.facebook {
+.button.facebook,
+.button.redeem {
     background: #3b5998;
     background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#4b71c1),color-stop(100%,#3b5998));
     background-image: -webkit-linear-gradient(#4b71c1,#3b5998);
@@ -181,7 +182,8 @@ h2 {
     text-shadow: #3b5998 0 1px 0;
 }
 
-.button.twitter {
+.button.twitter,
+.button.showReferralForm {
     background: #2578b4;
     background-image: -webkit-gradient(linear,50% 0,50% 100%,color-stop(0%,#58a8e2),color-stop(100%,#2578b4));
     background-image: -webkit-linear-gradient(#58a8e2,#2578b4);
@@ -230,4 +232,10 @@ h2 {
 #referralCodeForm,
 .step2 {
     display:none;
+}
+
+#rules {
+    margin-top:5em;
+    border-top:1px solid #bbb;
+    padding-top: 5em;
 }
