@@ -24,7 +24,7 @@ $(function() {
 
 
         // track in mixpanel if it's installed
-        mixpanel && mixpanel.track("Button clicked: " + this.href);
+        window.mixpanel && mixpanel.track("Button clicked: " + this.href);
 
     });
 

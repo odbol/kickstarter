@@ -5,7 +5,7 @@ $(function() {
 		originalReferralUrl = $('.referralLinkButton').attr('href'),
 
 		showActions = function () {
-			var referralMsg = 'Referred by ' + referralCode;
+			var referralMsg = 'Referred by ' + unescape(referralCode);
 
 			$('#referred_text').val(referralMsg);
 
